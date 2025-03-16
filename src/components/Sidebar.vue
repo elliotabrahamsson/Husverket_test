@@ -6,7 +6,7 @@
   >
     <div>
       <img alt="Payman Logo" aria-placeholder="Payman logo" />
-      <input type="text" placeholder="Search" />
+      <input type="text" placeholder="Search" class="border-2" />
     </div>
     <article class="flex flex-col flex-grow space-y-2 p-2 mt-3">
       <div class="flex items-center space-x-2">
