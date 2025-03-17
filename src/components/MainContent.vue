@@ -73,6 +73,11 @@
         <p class="px-2">CATEGORY</p>
         <p class="px-2">UPTAKEN</p>
         <p class="px-2">COST</p>
+        <button
+          class="border border-[#F1F0F0] hover:bg-blue-500 hover:text-white w-min p-1.5 ml-auto rounded"
+        >
+          <img alt="SettingsIcon" class="w-2 h-2" />
+        </button>
       </div>
 
       <div
@@ -87,7 +92,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
@@ -112,7 +117,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
@@ -137,7 +142,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
@@ -162,7 +167,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
@@ -187,7 +192,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
@@ -212,7 +217,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
@@ -237,7 +242,7 @@
 
         <p class="px-2">23456754234</p>
         <p class="px-2"></p>
-        <p class="px-2">Google <br />5684236526</p>
+        <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">New created</p>
         <p class="px-2">-</p>
