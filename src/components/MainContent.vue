@@ -177,12 +177,7 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p
-          data-modal-target="#modalData"
-          class="px-2 bg-[#C3E3B8] rounded-3xl cursor-pointer"
-        >
-          New created
-        </p>
+        <p class="px-2 bg-[#C3E3B8] rounded-3xl">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -207,12 +202,7 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p
-          data-modal-target="#modalData"
-          class="px-2 bg-[#F0F0F0] rounded-3xl cursor-pointer"
-        >
-          New created
-        </p>
+        <p class="px-2 bg-[#F0F0F0] rounded-3xl">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -237,12 +227,7 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p
-          data-modal-target="#modalData"
-          class="px-2 bg-[#EAB0B0] rounded-3xl cursor-pointer"
-        >
-          New created
-        </p>
+        <p class="px-2 bg-[#EAB0B0] rounded-3xl">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -267,12 +252,7 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p
-          data-modal-target="#modalData"
-          class="px-2 bg-[#EDE6C1] rounded-3xl cursor-pointer"
-        >
-          New created
-        </p>
+        <p class="px-2 bg-[#EDE6C1] rounded-3xl">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -297,12 +277,7 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p
-          data-modal-target="#modalData"
-          class="px-2 bg-[#A1A7E2] rounded-3xl cursor-pointer w-min"
-        >
-          Collection
-        </p>
+        <p class="px-2 bg-[#A1A7E2] rounded-3xl w-min">Collection</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -327,12 +302,7 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p
-          data-modal-target="#modalData"
-          class="px-2 bg-[#98BDE9] rounded-3xl cursor-pointer w-min font-bold"
-        >
-          Collection
-        </p>
+        <p class="px-2 bg-[#98BDE9] rounded-3xl w-min font-bold">Collection</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -345,26 +315,93 @@ onMounted(() => {
       </div>
     </div>
 
-    <div id="overlay">
-      <div class="w-min h-auto flex-col hidden fixed" id="modal">
+    <div id="overlay" class="w-max h-auto">
+      <div
+        class="border shadow border-[#F1F0F0] bg-[#FFFFFF] flex-col hidden p-3 rounded z-10 absolute top-[18%] left-[86%]"
+        id="modal"
+      >
         <div id="modalHeader">
           <h2>Customize view</h2>
-          <div id="modalContent">
-            <input placeholder="Search" class="border-2 border-[#F1F0F0]" />
-            <input type="checkbox" class="form-checkbox" />All
-            <input type="checkbox" class="form-checkbox" />VISIBILITY
-            <input type="checkbox" class="form-checkbox" />CATEGORY
-            <input type="checkbox" class="form-checkbox" />CATEGORY
-            <input type="checkbox" class="form-checkbox" />FINAL Paid
-            <input type="checkbox" class="form-checkbox" />Fact Date
-          </div>
+        </div>
+        <div id="modalContent" class="flex flex-col">
+          <input type="text" placeholder="Search" class="border p-1 rounded" />
+
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox" /> <span>All</span>
+          </label>
+
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox" />
+            <span>Visibility</span>
+          </label>
+
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox" />
+            <span>Category</span>
+          </label>
+
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox" />
+            <span>Final Paid</span>
+          </label>
+
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox" />
+            <span>Category</span>
+          </label>
+
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox" />
+            <span>Fact Date</span>
+          </label>
+        </div>
+        <div
+          class="border-t border-[#F1F0F0] flex items-center justify-end space-x-2 p-2"
+        >
+          <button class="border border-[#F1F0F0] p-1.5 rounded shadow">
+            Cancel
+          </button>
+          <button class="border border-[#F1F0F0] p-1.5 rounded shadow">
+            Apply
+          </button>
         </div>
       </div>
     </div>
 
-    <div id="modalData" class="hidden">
+    <div
+      id="modalData"
+      class="hidden border shadow border-[#F1F0F0] rounded w-[26rem] z-10 absolute top-[33%] left-[57%] transform -translate-x-1/2 -translate-y-1/2 bg-white"
+    >
       <div id="modalContent">
-        <p>Detta är MODAL 1!</p>
+        <p class="text-xs font-bold bg-[#F7FAFC] p-2">REMINDER HISTORY</p>
+        <div class="flex flex-col space-x-2 border-t border-[#F1F0F0] p-2">
+          <div class="flex items-center justify-between space-x-2">
+            <h1>Change Ticket</h1>
+            <p class="ml-auto bg-[#98BDE9] text-xs px-2 rounded-2xl w-max">
+              Unpaid due
+            </p>
+          </div>
+          <p class="text-xs">22. Jul 2022</p>
+        </div>
+      </div>
+      <div class="flex flex-col space-x-2 border-t border-[#F1F0F0] p-2">
+        <div>
+          <div class="flex items-center justify-between space-x-2">
+            <h1>Send reminder</h1>
+          </div>
+          <p class="text-xs">22. Jul 2022</p>
+        </div>
+      </div>
+      <div class="flex flex-col space-x-2 border-t border-[#F1F0F0] p-2">
+        <div>
+          <div class="flex items-center justify-between space-x-2">
+            <h1>Change Ticket</h1>
+            <p class="ml-auto bg-[#98BDE9] text-xs px-2 rounded-2xl w-max">
+              Send reminder
+            </p>
+          </div>
+          <p class="text-xs">22. Jul 2022</p>
+        </div>
       </div>
     </div>
   </div>
