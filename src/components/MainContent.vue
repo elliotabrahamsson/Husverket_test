@@ -147,7 +147,12 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#EDE6C1] rounded-3xl cursor-pointer"
+        >
+          New created
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -172,7 +177,12 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#C3E3B8] rounded-3xl cursor-pointer"
+        >
+          New created
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -197,11 +207,16 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#F0F0F0] rounded-3xl cursor-pointer"
+        >
+          New created
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
-        <p class="px-2">Opened</p>
+        <p class="px-2">Not opened</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">543,000</p>
         <p class="px-2">A21</p>
@@ -222,7 +237,12 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#EAB0B0] rounded-3xl cursor-pointer"
+        >
+          New created
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -247,7 +267,12 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#EDE6C1] rounded-3xl cursor-pointer"
+        >
+          New created
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -272,11 +297,16 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#A1A7E2] rounded-3xl cursor-pointer w-min"
+        >
+          Collection
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
-        <p class="px-2">Opened</p>
+        <p class="px-2">Not opened</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">543,000</p>
         <p class="px-2">A21</p>
@@ -297,11 +327,16 @@ onMounted(() => {
         <p class="px-2"></p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2">New created</p>
+        <p
+          data-modal-target="#modalData"
+          class="px-2 bg-[#98BDE9] rounded-3xl cursor-pointer w-min font-bold"
+        >
+          Collection
+        </p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
-        <p class="px-2">Opened</p>
+        <p class="px-2">Not opened</p>
         <p class="px-2">2022-03-09</p>
         <p class="px-2">543,000</p>
         <p class="px-2">A21</p>
@@ -324,6 +359,12 @@ onMounted(() => {
             <input type="checkbox" class="form-checkbox" />Fact Date
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="modalData" class="hidden">
+      <div id="modalContent">
+        <p>Detta är MODAL 1!</p>
       </div>
     </div>
   </div>
