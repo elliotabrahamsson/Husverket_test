@@ -1,3 +1,55 @@
+<script setup>
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const openModalBtn = document.querySelectorAll("[data-modal-target]");
+  const closeModalBtn = document.querySelectorAll("[data-close-button]");
+  const overlay = document.getElementById("overlay");
+
+  openModalBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modal = document.querySelector(button.dataset.modalTarget);
+      toggleModal(modal);
+    });
+  });
+
+  closeModalBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modal = button.closest(".modal");
+      hideModal(modal);
+    });
+  });
+
+  function toggleModal(modal) {
+    if (!modal) return;
+    const isActive = modal.classList.contains("active");
+
+    if (isActive) {
+      hideModal(modal);
+    } else {
+      showModal(modal);
+    }
+  }
+
+  function showModal(modal) {
+    if (!modal) return;
+    modal.classList.add("active");
+    overlay.classList.add("active");
+  }
+
+  function hideModal(modal) {
+    if (!modal) return;
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  overlay.addEventListener("click", () => {
+    const modals = document.querySelectorAll(".modal.active");
+    modals.forEach((modal) => hideModal(modal));
+  });
+});
+</script>
+
 <template>
   <div
     class="min-h-screen flex flex-col font-[Roboto] p-3 border-t border-[#F1F0F0] w-full"
@@ -74,6 +126,7 @@
         <p class="px-2">UPTAKEN</p>
         <p class="px-2">COST</p>
         <button
+          data-modal-target="#modal"
           class="border border-[#F1F0F0] hover:bg-blue-500 hover:text-white w-min p-1.5 ml-auto rounded"
         >
           <img alt="SettingsIcon" class="w-2 h-2" />
@@ -256,7 +309,28 @@
         <p class="px-2"></p>
       </div>
     </div>
+
+    <div id="overlay">
+      <div class="w-min h-auto flex-col hidden fixed" id="modal">
+        <div id="modalHeader">
+          <h2>Customize view</h2>
+          <div id="modalContent">
+            <input placeholder="Search" class="border-2 border-[#F1F0F0]" />
+            <input type="checkbox" class="form-checkbox" />All
+            <input type="checkbox" class="form-checkbox" />VISIBILITY
+            <input type="checkbox" class="form-checkbox" />CATEGORY
+            <input type="checkbox" class="form-checkbox" />CATEGORY
+            <input type="checkbox" class="form-checkbox" />FINAL Paid
+            <input type="checkbox" class="form-checkbox" />Fact Date
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<style scoped>
+.active {
+  display: block;
+}
+</style>
