@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+:root {
+  --font-roboto: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+p,
+button,
+input,
+ul,
+li {
+  font-family: var(--font-roboto);
+}

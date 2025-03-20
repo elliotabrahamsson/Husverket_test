@@ -55,7 +55,7 @@ onMounted(() => {
     class="min-h-screen flex flex-col font-[Roboto] p-3 border-t border-[#F1F0F0] w-full"
   >
     <div class="flex items-center justify-between">
-      <h1 class="m-4">Bills</h1>
+      <h1 class="m-4 ml-10">Bills</h1>
       <ul class="flex justify-end space-x-6 p-2">
         <li class="flex items-center space-x-2">
           <button
@@ -127,9 +127,13 @@ onMounted(() => {
         <p class="px-2">COST</p>
         <button
           data-modal-target="#modal"
-          class="border border-[#F1F0F0] hover:bg-blue-500 hover:text-white w-min p-1.5 ml-auto rounded"
+          class="border border-[#F1F0F0] hover:bg-blue-500 hover:text-white ml-auto w-max p-1 rounded"
         >
-          <img alt="SettingsIcon" class="w-2 h-2" />
+          <img
+            alt="SettingsIcon"
+            src="../assets/settings-icon.png"
+            class="w-4 h-4"
+          />
         </button>
       </div>
 
@@ -139,7 +143,11 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
@@ -149,7 +157,7 @@ onMounted(() => {
         <p class="px-2">2022-03-09</p>
         <p
           data-modal-target="#modalData"
-          class="px-2 bg-[#EDE6C1] rounded-3xl cursor-pointer"
+          class="px-2 bg-[#EDE6C1] rounded-3xl cursor-pointer w-fit font-bold"
         >
           New created
         </p>
@@ -169,15 +177,19 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
         <p class="px-2">23456754234</p>
-        <p class="px-2"></p>
+        <p class="px-2 text-center bg-[#C3E3B8] rounded-3xl w-fit">F</p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2 bg-[#C3E3B8] rounded-3xl">New created</p>
+        <p class="px-2 bg-[#C3E3B8] rounded-3xl w-fit font-bold">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -194,15 +206,19 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
         <p class="px-2">23456754234</p>
-        <p class="px-2"></p>
+        <p class="px-2 text-center bg-[#F0F0F0] rounded-3xl w-fit">F</p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2 bg-[#F0F0F0] rounded-3xl">New created</p>
+        <p class="px-2 bg-[#F0F0F0] rounded-3xl w-fit font-bold">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -219,15 +235,19 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
         <p class="px-2">23456754234</p>
-        <p class="px-2"></p>
+        <p class="px-2 text-center bg-[#EAB0B0] rounded-3xl w-fit">F</p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2 bg-[#EAB0B0] rounded-3xl">New created</p>
+        <p class="px-2 bg-[#EAB0B0] rounded-3xl w-fit font-bold">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -244,15 +264,19 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
         <p class="px-2">23456754234</p>
-        <p class="px-2"></p>
+        <p class="px-2 text-center bg-[#EDE6C1] rounded-3xl w-fit">F</p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2 bg-[#EDE6C1] rounded-3xl">New created</p>
+        <p class="px-2 bg-[#EDE6C1] rounded-3xl w-fit font-bold">New created</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -269,15 +293,19 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
         <p class="px-2">23456754234</p>
-        <p class="px-2"></p>
+        <p class="px-2 text-center bg-[#A1A7E2] rounded-3xl w-fit">F</p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2 bg-[#A1A7E2] rounded-3xl w-min">Collection</p>
+        <p class="px-2 bg-[#A1A7E2] rounded-3xl w-fit font-bold">Collection</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -294,15 +322,19 @@ onMounted(() => {
         <input type="checkbox" class="form-checkbox" />
 
         <div class="flex items-center gap-x-2">
-          <img alt="ProfileIcon" class="w-6 h-6 rounded-full" />
+          <img
+            alt="ProfileIcon"
+            src="../assets/profile-icon-9.png"
+            class="w-6 h-6 rounded-full"
+          />
           <span>3456874</span>
         </div>
 
         <p class="px-2">23456754234</p>
-        <p class="px-2"></p>
+        <p class="px-2 text-center bg-[#98BDE9] rounded-3xl w-fit">F</p>
         <p class="px-2"><strong>Google</strong> <br />5684236526</p>
         <p class="px-2">2022-03-09</p>
-        <p class="px-2 bg-[#98BDE9] rounded-3xl w-min font-bold">Collection</p>
+        <p class="px-2 bg-[#98BDE9] rounded-3xl font-bold w-fit">Collection</p>
         <p class="px-2">-</p>
         <p class="px-2">543,000</p>
         <p class="px-2">543,000</p>
@@ -370,7 +402,7 @@ onMounted(() => {
 
     <div
       id="modalData"
-      class="hidden border shadow border-[#F1F0F0] rounded w-[26rem] z-10 absolute top-[33%] left-[57%] transform -translate-x-1/2 -translate-y-1/2 bg-white"
+      class="hidden border shadow border-[#F1F0F0] rounded w-[26rem] z-10 absolute top-[31%] left-[54%] transform -translate-x-1/2 -translate-y-1/2 bg-white"
     >
       <div id="modalContent">
         <p class="text-xs font-bold bg-[#F7FAFC] p-2">REMINDER HISTORY</p>
